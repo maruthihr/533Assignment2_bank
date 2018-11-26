@@ -10,18 +10,18 @@
     <features xmi:id="_XBK6ou96EeieaJ798W69lg" name="Logger" children="_Y4UpgO96EeieaJ798W69lg _aHfyYO96EeieaJ798W69lg">
       <realizedBy xsi:type="ram:Aspect" href="Logger.ram#_YQLEYO96EeieaJ798W69lg"/>
     </features>
-    <features xmi:id="_Y4UpgO96EeieaJ798W69lg" name="LogTo" children="_bzkSoO96EeieaJ798W69lg _qFokAPCAEeig9NioPILYBg" parent="_XBK6ou96EeieaJ798W69lg" parentRelationship="Mandatory"/>
+    <features xmi:id="_Y4UpgO96EeieaJ798W69lg" name="LogDestination" children="_bzkSoO96EeieaJ798W69lg _qFokAPCAEeig9NioPILYBg" parent="_XBK6ou96EeieaJ798W69lg" parentRelationship="Mandatory"/>
     <features xmi:id="_aHfyYO96EeieaJ798W69lg" name="LogContent" children="_ePWYkO96EeieaJ798W69lg _O0qaoPDXEeijtsVLPYzKdQ" parent="_XBK6ou96EeieaJ798W69lg" parentRelationship="Mandatory"/>
-    <features xmi:id="_bzkSoO96EeieaJ798W69lg" name="LogToScreen" parent="_Y4UpgO96EeieaJ798W69lg" parentRelationship="OR">
+    <features xmi:id="_bzkSoO96EeieaJ798W69lg" name="Console" parent="_Y4UpgO96EeieaJ798W69lg" parentRelationship="OR">
       <realizedBy xsi:type="ram:Aspect" href="LogToConsole.ram#_qzIpQO96EeieaJ798W69lg"/>
     </features>
-    <features xmi:id="_ePWYkO96EeieaJ798W69lg" name="LogOperationExecution" parent="_aHfyYO96EeieaJ798W69lg" parentRelationship="OR">
+    <features xmi:id="_ePWYkO96EeieaJ798W69lg" name="OperationExecution" parent="_aHfyYO96EeieaJ798W69lg" parentRelationship="OR">
       <realizedBy xsi:type="ram:Aspect" href="LogOperationExecution.ram#_1CA4EO96EeieaJ798W69lg"/>
     </features>
-    <features xmi:id="_qFokAPCAEeig9NioPILYBg" name="LogToFile" parent="_Y4UpgO96EeieaJ798W69lg" parentRelationship="OR">
+    <features xmi:id="_qFokAPCAEeig9NioPILYBg" name="File" parent="_Y4UpgO96EeieaJ798W69lg" parentRelationship="OR">
       <realizedBy xsi:type="ram:Aspect" href="LogToFile.ram#_w2IVgPCCEeig9NioPILYBg"/>
     </features>
-    <features xmi:id="_O0qaoPDXEeijtsVLPYzKdQ" name="LogOpeartionExecutionTime" parent="_aHfyYO96EeieaJ798W69lg" parentRelationship="OR">
+    <features xmi:id="_O0qaoPDXEeijtsVLPYzKdQ" name="OpeartionExecutionTime" parent="_aHfyYO96EeieaJ798W69lg" parentRelationship="OR">
       <realizedBy xsi:type="ram:Aspect" href="LogOpeartionExecutionTime.ram#_ow6EwPDYEeijtsVLPYzKdQ"/>
     </features>
   </featureModel>

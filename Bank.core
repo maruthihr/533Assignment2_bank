@@ -212,17 +212,17 @@
           <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
         </configurations>
       </reuses>
-      <reuses xmi:id="_wXleQPEEEeiEsMKAEauoNg" name="Logger" selectedConfiguration="_wXleQfEEEeiEsMKAEauoNg">
+      <reuses xmi:id="_zMM3IPFVEeiyq637o3Z7Hg" name="Logger" selectedConfiguration="_zMM3IfFVEeiyq637o3Z7Hg">
         <reusedConcern href="Reused_Logger/Logger.core#_XBK6oO96EeieaJ798W69lg"/>
-        <configurations xmi:id="_wXleQfEEEeiEsMKAEauoNg" name="Logger_LogToScreenLogOpeartionExecutionTimeLoggerLogToFileLogContentLogOperationExecutionLogTo" reuse="_wXleQPEEEeiEsMKAEauoNg">
+        <configurations xmi:id="_zMM3IfFVEeiyq637o3Z7Hg" name="Logger_FileLogContentLogDestinationConsoleOperationExecutionLoggerOpeartionExecutionTime" reuse="_zMM3IPFVEeiyq637o3Z7Hg">
           <source xsi:type="core:COREFeatureModel" href="Reused_Logger/Logger.core#_XBK6oe96EeieaJ798W69lg"/>
-          <selected href="Reused_Logger/Logger.core#_bzkSoO96EeieaJ798W69lg"/>
-          <selected href="Reused_Logger/Logger.core#_O0qaoPDXEeijtsVLPYzKdQ"/>
-          <selected href="Reused_Logger/Logger.core#_XBK6ou96EeieaJ798W69lg"/>
           <selected href="Reused_Logger/Logger.core#_qFokAPCAEeig9NioPILYBg"/>
           <selected href="Reused_Logger/Logger.core#_aHfyYO96EeieaJ798W69lg"/>
-          <selected href="Reused_Logger/Logger.core#_ePWYkO96EeieaJ798W69lg"/>
           <selected href="Reused_Logger/Logger.core#_Y4UpgO96EeieaJ798W69lg"/>
+          <selected href="Reused_Logger/Logger.core#_bzkSoO96EeieaJ798W69lg"/>
+          <selected href="Reused_Logger/Logger.core#_ePWYkO96EeieaJ798W69lg"/>
+          <selected href="Reused_Logger/Logger.core#_XBK6ou96EeieaJ798W69lg"/>
+          <selected href="Reused_Logger/Logger.core#_O0qaoPDXEeijtsVLPYzKdQ"/>
         </configurations>
       </reuses>
     </features>

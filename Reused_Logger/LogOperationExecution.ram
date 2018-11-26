@@ -4,7 +4,7 @@
   <coreConcern href="Logger.core#_XBK6oO96EeieaJ798W69lg"/>
   <structuralView xmi:id="_1CA4Ee96EeieaJ798W69lg">
     <classes xsi:type="ram:Class" xmi:id="_KIljAO-YEeiICPxjoWTrvQ" name="Logger" partiality="public" visibility="public">
-      <operations xmi:id="_vF9eoO-hEeiICPxjoWTrvQ" name="logOperationExecution" partiality="public" visibility="public" returnType="_1CA4E-96EeieaJ798W69lg"/>
+      <operations xmi:id="_vF9eoO-hEeiICPxjoWTrvQ" name="logOperationExecution" visibility="public" returnType="_1CA4E-96EeieaJ798W69lg"/>
     </classes>
     <types xsi:type="ram:RVoid" xmi:id="_1CA4E-96EeieaJ798W69lg"/>
     <types xsi:type="ram:RAny" xmi:id="_1CA4FO96EeieaJ798W69lg"/>
@@ -21,14 +21,11 @@
   <messageViews xsi:type="ram:AspectMessageView" xmi:id="_Bra1dPB0EeizcJP4V3hc0Q" pointcut="_vF9eoO-hEeiICPxjoWTrvQ">
     <advice xmi:id="_Bra1dfB0EeizcJP4V3hc0Q">
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Bra1dvB0EeizcJP4V3hc0Q" covered="_Bra1efB0EeizcJP4V3hc0Q" message="_Bra1evB0EeizcJP4V3hc0Q"/>
-      <fragments xsi:type="ram:ExecutionStatement" xmi:id="_JOxAMPB2EeizcJP4V3hc0Q" covered="_Bra1efB0EeizcJP4V3hc0Q">
-        <specification xsi:type="ram:OpaqueExpression" xmi:id="_JOxAMfB2EeizcJP4V3hc0Q" body="//Log the method that is currently being executed" language="java"/>
-      </fragments>
       <fragments xsi:type="ram:ExecutionStatement" xmi:id="_94ZdgPB4Eeig9NioPILYBg" covered="_Bra1efB0EeizcJP4V3hc0Q">
         <specification xsi:type="ram:OpaqueExpression" xmi:id="_94ZdgfB4Eeig9NioPILYBg" body="final StackTraceElement [] ste = Thread.currentThread().getStackTrace()" language="java"/>
       </fragments>
       <fragments xsi:type="ram:ExecutionStatement" xmi:id="_MhLr0PB5Eeig9NioPILYBg" covered="_Bra1efB0EeizcJP4V3hc0Q">
-        <specification xsi:type="ram:OpaqueExpression" xmi:id="_MhLr0fB5Eeig9NioPILYBg" body="logMsg = ste[1].getMethodName() + &quot; has executed on object  &quot;+ this" language="java"/>
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_MhLr0fB5Eeig9NioPILYBg" body="message = ste[1].getMethodName() + &quot; has executed on object  &quot;+ this" language="java"/>
       </fragments>
       <fragments xsi:type="ram:CombinedFragment" xmi:id="_AbfW0PDxEeiHTt_AI2y1nw" covered="_Bra1efB0EeizcJP4V3hc0Q">
         <operands xmi:id="_AbfW0fDxEeiHTt_AI2y1nw">
@@ -46,7 +43,7 @@
       </fragments>
       <fragments xsi:type="ram:OriginalBehaviorExecution" xmi:id="_Bra1d_B0EeizcJP4V3hc0Q" covered="_Bra1efB0EeizcJP4V3hc0Q"/>
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_Bra1ePB0EeizcJP4V3hc0Q" covered="_Bra1efB0EeizcJP4V3hc0Q" message="_Bra1e_B0EeizcJP4V3hc0Q"/>
-      <lifelines xmi:id="_Bra1efB0EeizcJP4V3hc0Q" represents="_Bra1fPB0EeizcJP4V3hc0Q" coveredBy="_Bra1dvB0EeizcJP4V3hc0Q _Bra1ePB0EeizcJP4V3hc0Q _Bra1d_B0EeizcJP4V3hc0Q _JOxAMPB2EeizcJP4V3hc0Q _94ZdgPB4Eeig9NioPILYBg _MhLr0PB5Eeig9NioPILYBg _AbfW0PDxEeiHTt_AI2y1nw _Jrb4MPDxEeiHTt_AI2y1nw _OT-6MPD9EeiRmNVL5NSmTQ _OT-6MfD9EeiRmNVL5NSmTQ _SS8DEPD9EeiRmNVL5NSmTQ _SS8DEfD9EeiRmNVL5NSmTQ"/>
+      <lifelines xmi:id="_Bra1efB0EeizcJP4V3hc0Q" represents="_Bra1fPB0EeizcJP4V3hc0Q" coveredBy="_Bra1dvB0EeizcJP4V3hc0Q _Bra1ePB0EeizcJP4V3hc0Q _Bra1d_B0EeizcJP4V3hc0Q _94ZdgPB4Eeig9NioPILYBg _MhLr0PB5Eeig9NioPILYBg _AbfW0PDxEeiHTt_AI2y1nw _Jrb4MPDxEeiHTt_AI2y1nw _OT-6MPD9EeiRmNVL5NSmTQ _OT-6MfD9EeiRmNVL5NSmTQ _SS8DEPD9EeiRmNVL5NSmTQ _SS8DEfD9EeiRmNVL5NSmTQ"/>
       <messages xmi:id="_Bra1evB0EeizcJP4V3hc0Q" sendEvent="_Bra1ffB0EeizcJP4V3hc0Q" receiveEvent="_Bra1dvB0EeizcJP4V3hc0Q" signature="_vF9eoO-hEeiICPxjoWTrvQ"/>
       <messages xmi:id="_Bra1e_B0EeizcJP4V3hc0Q" sendEvent="_Bra1ePB0EeizcJP4V3hc0Q" receiveEvent="_Bra1fvB0EeizcJP4V3hc0Q" signature="_vF9eoO-hEeiICPxjoWTrvQ" messageSort="reply"/>
       <messages xmi:id="_OT_hQPD9EeiRmNVL5NSmTQ" sendEvent="_OT-6MPD9EeiRmNVL5NSmTQ" receiveEvent="_OT-6MfD9EeiRmNVL5NSmTQ">

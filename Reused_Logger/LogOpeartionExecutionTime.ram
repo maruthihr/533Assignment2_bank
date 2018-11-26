@@ -4,8 +4,8 @@
   <coreConcern href="Logger.core#_XBK6oO96EeieaJ798W69lg"/>
   <structuralView xmi:id="_ow6EwfDYEeijtsVLPYzKdQ">
     <classes xsi:type="ram:Class" xmi:id="_ow6EwvDYEeijtsVLPYzKdQ" name="Logger" partiality="public" visibility="public">
-      <operations xmi:id="_ow6r0PDYEeijtsVLPYzKdQ" name="logOpExecTime" partiality="public" visibility="public" returnType="_ow6r0vDYEeijtsVLPYzKdQ"/>
-      <attributes xmi:id="_ow6r0fDYEeijtsVLPYzKdQ" name="execTime" type="_ow6r2vDYEeijtsVLPYzKdQ"/>
+      <operations xmi:id="_ow6r0PDYEeijtsVLPYzKdQ" name="logOperationExecutionTime" partiality="public" visibility="public" returnType="_ow6r0vDYEeijtsVLPYzKdQ"/>
+      <attributes xmi:id="_ow6r0fDYEeijtsVLPYzKdQ" name="executionTime" type="_ow6r2vDYEeijtsVLPYzKdQ"/>
     </classes>
     <types xsi:type="ram:RVoid" xmi:id="_ow6r0vDYEeijtsVLPYzKdQ"/>
     <types xsi:type="ram:RAny" xmi:id="_ow6r0_DYEeijtsVLPYzKdQ"/>
@@ -23,20 +23,20 @@
     <advice xmi:id="_ow6r3vDYEeijtsVLPYzKdQ">
       <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_ow6r3_DYEeijtsVLPYzKdQ" covered="_ow6r6PDYEeijtsVLPYzKdQ" message="_ow6r6fDYEeijtsVLPYzKdQ"/>
       <fragments xsi:type="ram:ExecutionStatement" xmi:id="_ow6r4PDYEeijtsVLPYzKdQ" covered="_ow6r6PDYEeijtsVLPYzKdQ">
-        <specification xsi:type="ram:OpaqueExpression" xmi:id="_ow6r4fDYEeijtsVLPYzKdQ" body="long start = System.nanoTime()" language="java"/>
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_ow6r4fDYEeijtsVLPYzKdQ" body="long startTime = System.nanoTime()" language="java"/>
       </fragments>
       <fragments xsi:type="ram:OriginalBehaviorExecution" xmi:id="_ow6r4vDYEeijtsVLPYzKdQ" covered="_ow6r6PDYEeijtsVLPYzKdQ"/>
       <fragments xsi:type="ram:ExecutionStatement" xmi:id="_ow6r4_DYEeijtsVLPYzKdQ" covered="_ow6r6PDYEeijtsVLPYzKdQ">
-        <specification xsi:type="ram:OpaqueExpression" xmi:id="_ow6r5PDYEeijtsVLPYzKdQ" body="long end = System.nanoTime()" language="java"/>
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_ow6r5PDYEeijtsVLPYzKdQ" body="long endTime = System.nanoTime()" language="java"/>
       </fragments>
       <fragments xsi:type="ram:ExecutionStatement" xmi:id="_ow6r5fDYEeijtsVLPYzKdQ" covered="_ow6r6PDYEeijtsVLPYzKdQ">
-        <specification xsi:type="ram:OpaqueExpression" xmi:id="_ow6r5vDYEeijtsVLPYzKdQ" body="execTime = end - start" language="java"/>
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_ow6r5vDYEeijtsVLPYzKdQ" body="executionTime = endTime - startTime" language="java"/>
       </fragments>
       <fragments xsi:type="ram:ExecutionStatement" xmi:id="_KEJnEPDZEeijtsVLPYzKdQ" covered="_ow6r6PDYEeijtsVLPYzKdQ">
         <specification xsi:type="ram:OpaqueExpression" xmi:id="_KEJnEfDZEeijtsVLPYzKdQ" body="final StackTraceElement [] ste = Thread.currentThread().getStackTrace()" language="java"/>
       </fragments>
       <fragments xsi:type="ram:ExecutionStatement" xmi:id="_ulU6cPDYEeijtsVLPYzKdQ" covered="_ow6r6PDYEeijtsVLPYzKdQ">
-        <specification xsi:type="ram:OpaqueExpression" xmi:id="_ulU6cfDYEeijtsVLPYzKdQ" body="logMsg = ste[1].getMethodName() + &quot; has executed on object &quot; + this + &quot; in &quot; + execTime + &quot; ns&quot;" language="java"/>
+        <specification xsi:type="ram:OpaqueExpression" xmi:id="_ulU6cfDYEeijtsVLPYzKdQ" body="message = ste[1].getMethodName() + &quot; has executed on object &quot; + this + &quot; in &quot; + executionTime + &quot; ns&quot;" language="java"/>
       </fragments>
       <fragments xsi:type="ram:CombinedFragment" xmi:id="_XaEU8PD9EeiRmNVL5NSmTQ" covered="_ow6r6PDYEeijtsVLPYzKdQ">
         <operands xmi:id="_XaEU8fD9EeiRmNVL5NSmTQ">

@@ -4,11 +4,11 @@
   <coreConcern href="Logger.core#_XBK6oO96EeieaJ798W69lg"/>
   <structuralView xmi:id="_YQLEYe96EeieaJ798W69lg">
     <classes xsi:type="ram:Class" xmi:id="_zXG4oO9-Eeild4gEyhYY5g" name="Logger" partiality="public" visibility="public">
-      <operations xmi:id="_JNJ_wPD8EeiRmNVL5NSmTQ" name="showOnConsole" extendedVisibility="private" returnType="_YQLEYu96EeieaJ798W69lg"/>
-      <operations xmi:id="__KnHUPD8EeiRmNVL5NSmTQ" name="writeToLogFile" extendedVisibility="private" returnType="_YQLEYu96EeieaJ798W69lg"/>
-      <attributes xmi:id="_9AeIQPB-Eeig9NioPILYBg" name="logMsg" type="_YQLEZ-96EeieaJ798W69lg"/>
-      <attributes xmi:id="_1n71APDtEeiHTt_AI2y1nw" name="logToConsole" type="_YQLEZO96EeieaJ798W69lg"/>
-      <attributes xmi:id="_80nosPDuEeiHTt_AI2y1nw" name="logToFile" type="_YQLEZO96EeieaJ798W69lg"/>
+      <operations xmi:id="_JNJ_wPD8EeiRmNVL5NSmTQ" name="displayOnConsole" partiality="public" extendedVisibility="private" returnType="_YQLEYu96EeieaJ798W69lg"/>
+      <operations xmi:id="__KnHUPD8EeiRmNVL5NSmTQ" name="writeToLogFile" partiality="public" extendedVisibility="private" returnType="_YQLEYu96EeieaJ798W69lg"/>
+      <attributes xmi:id="_9AeIQPB-Eeig9NioPILYBg" name="message" partiality="public" type="_YQLEZ-96EeieaJ798W69lg"/>
+      <attributes xmi:id="_1n71APDtEeiHTt_AI2y1nw" name="logToConsole" partiality="public" type="_YQLEZO96EeieaJ798W69lg"/>
+      <attributes xmi:id="_80nosPDuEeiHTt_AI2y1nw" name="logToFile" partiality="public" type="_YQLEZO96EeieaJ798W69lg"/>
     </classes>
     <types xsi:type="ram:RVoid" xmi:id="_YQLEYu96EeieaJ798W69lg"/>
     <types xsi:type="ram:RAny" xmi:id="_YQLEY-96EeieaJ798W69lg"/>
